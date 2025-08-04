@@ -6,4 +6,12 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlerMiddleware>();
 
+app.UseHttpsRedirection();
+
+app.UsePathBase("/api");
+
+app.UseRouting();
+
+app.MapControllers();
+
 app.Run();
