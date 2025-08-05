@@ -8,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDBService(builder.Configuration);
 
+builder.Services.RegisterRepositories();
+
+builder.Services.RegisterDbServices();
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
