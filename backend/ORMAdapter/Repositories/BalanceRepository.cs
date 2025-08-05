@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces.Repositories;
+using Application.Interfaces.Repositories.Base;
 using Domain.Entities;
 using ORMAdapter.Contexts;
 using ORMAdapter.Repositories.Base;
