@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ORMAdapter.Contexts;
+using ORMAdapter.Repositories;
+using ORMAdapter.Services;
 
 namespace ORMAdapter.DependencyInjection
 {
@@ -38,3 +40,4 @@ namespace ORMAdapter.DependencyInjection
             return services;
         }
     }
+}
